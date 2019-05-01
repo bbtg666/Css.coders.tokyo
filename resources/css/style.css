@@ -1,0 +1,357 @@
+*{
+	padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html ,body{
+	width: 100%;
+	height: 100%;
+}
+
+.root {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr; 
+}
+
+.sibar-left, .sibar-right {
+    background-color: rgb(230,230,230);
+}
+
+/* -------------------------------------------------
+--------------------header--------------------------
+----------------------------------------------------*/
+
+
+.header {
+    z-index: 1;
+    width:  100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #fafafa;
+    border-bottom: 1px solid rgb(230,230,230);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    height: 100%;
+}
+
+.home {
+    display: inline-block;
+    background-image: url('https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 32px;
+}
+
+/* -----------------------menu---------------------------- */
+
+.menu {
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    height: 100%;
+}
+
+.menu > li {
+    line-height: 400%;
+    float: left;
+    display: block;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.menu > li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    padding: 0 8px;
+    margin: 0 0.5px;
+    text-align: center;
+    color: #999;
+    transition: all 0.1s;
+}   
+
+.menu > li:hover > a {
+    border-bottom: 2px solid #88299b;
+    color: #88299b;
+}
+
+.div-menu-con {
+    background: white;
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 650px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.div-menu-con .menu-con {
+    list-style: none;
+    flex-grow: 1;
+    text-align: left;
+    display: none;
+}
+
+
+.div-menu-con .menu-con li {
+    line-height: 300%;
+}
+
+.div-menu-con .menu-con .b-m a {
+    padding: 0 15px;
+    border: none;
+    text-decoration: none;
+    color: #444;
+}
+
+.div-menu-con .menu-con .b-m:hover a {
+    display: block;
+    background: #DDD;
+}
+
+.li-tieu-de a {
+    padding: 0 15px;
+    background: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: black !important;
+}
+.co-menu-con:hover .menu-con {
+    display: block;
+}
+
+/* --------------------search---------------------- */
+
+.search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-sub {
+    display: flex;
+	flex-direction: row;
+    color: #7f7777;
+    border: 1px solid #ddd; 
+    padding: 10px;
+    align-items: center;
+}
+
+.search input {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* ---------------------account------------------ */
+
+.account {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.account a {
+    color: black;
+    margin: 3px;
+}
+
+.account a:hover {
+    color: #88299b;
+}
+/* -------------------------------------------------- */
+/* ==================Main============================== */
+/* ----------------------------------------------------- */
+
+.main {
+    border: 1px solid #CFCFCF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -----------Image Loader----------- */
+
+.image-loader {
+    margin-top: 70px;
+    width: 1024px;
+}
+
+/* ----------Album đề xuất---------- */
+.de-xuat {
+    height: 350px;
+    width: 1024px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.de-xuat-sub {
+    height: 100%;
+    padding-top: 30px; 
+    margin: 0 47px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.de-xuat-sub .tieu-de {
+    font-size: 25px;
+    font-weight: bold;
+    color: #454545;
+}
+
+.album-de-xuat {
+    margin-top: 25px; 
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.album-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px !important;
+}
+
+.ten-album-component {
+    margin-top: 10px;
+    color: #454545;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ten-album-component:hover {
+    color: #88299b;
+}
+
+/* ---------------Bảng xếp hạng-------------------- */
+
+.bxh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1024px;
+    height: 640px;
+    background-image: linear-gradient(to bottom,#f1f3f5 0,#fafafa 100%);
+    background-repeat: repeat-x;
+}
+
+.sub-bxh {
+    width: 930px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bxh .bxh-so-do {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: url('https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/bg-chart.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 2;
+}
+
+.bxh .list-top {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    background: linear-gradient(180deg, rgba(28,30,82,1) 40%, rgb(26, 4, 27) 100%);
+}
+
+.bxh .list-top a {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+}
+
+.week-chart {
+    margin-top: 25px;
+    width: 960px;
+    flex-grow: 1;
+    border-bottom-color: rgb(230, 230, 230);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.week-chart-sub {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.week-chart-sub .title-week-chart a {
+    text-decoration: none;
+    color: #454545;
+    font-weight: bold;
+}
+
+.week-chart-sub .title-week-chart a:hover {
+    color: #88299b;
+}
+
+.week-chart-sub .list-items {
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.week-chart-sub .list-items .list-items-sub {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -----------------Top 100------------------ */
+
+.top100 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tieude-link a {
+    text-decoration: none;
+    color: #454545;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tieude-link a:hover {
+    color: #88299b;
+}
+
+/* ----------------Bài hát mới------------------- */
