@@ -1,12 +1,12 @@
 *{
-	padding:0;
+    padding:0;
     margin: 0;
     box-sizing: border-box;
 }
 
 html ,body{
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .root {
@@ -152,7 +152,7 @@ html ,body{
 
 .search-sub {
     display: flex;
-	flex-direction: row;
+    flex-direction: row;
     color: #7f7777;
     border: 1px solid #ddd; 
     padding: 10px;
@@ -191,6 +191,7 @@ html ,body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(250, 250, 250);
 }
 
 /* -----------Image Loader----------- */
@@ -214,8 +215,10 @@ html ,body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #EEE;
 }
-.de-xuat-sub .tieu-de {
+.tieu-de {
     font-size: 25px;
     font-weight: bold;
     color: #454545;
@@ -232,7 +235,7 @@ html ,body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 200px !important;
+    width: 210px !important;
 }
 
 .ten-album-component {
@@ -355,3 +358,48 @@ html ,body{
 }
 
 /* ----------------Bài hát mới------------------- */
+
+.bai-hat-moi {
+    width: 100%;
+    height: 382px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bai-hat-moi .bai-hat-moi-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 930px;
+}
+
+.bai-hat-moi .bai-hat-moi-box .top {
+    margin-bottom: 15px;
+}
+
+.bai-hat-moi .bai-hat-moi-box .bot {
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+.bai-hat-moi .bai-hat-moi-box .bot .right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+} 
+
+.bai-hat-moi .bai-hat-moi-box .bot .left {
+    flex-grow: 1;
+    border-right: 1px solid #EEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-left: 10px;
+} 
